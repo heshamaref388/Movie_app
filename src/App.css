@@ -1,0 +1,13 @@
+.hoveritem:hover {
+    transform: scale(1.05);
+    transition: all .5s ;
+}
+/* .hoveritem:hover .bayment{
+   opacity: 1;
+   transition: all .5s ;
+}
+
+.bayment {
+    background-color: black;
+    opacity: 0;
+} */

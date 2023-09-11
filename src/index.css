@@ -1,0 +1,182 @@
+
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: var(--bg-color) !important;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2)
+}
+.logoImg {
+  width: 40px;
+}
+.footer {
+  background-color: var(--bg-color) !important;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+:root {
+--bg-color: rgb(19, 23, 34);
+--font-color: #fff;
+--light-bg:#24baef;
+--border-color:#a8a8a83d;
+}
+
+.outLet-container {
+  min-height: 100vh;
+}
+
+body {
+background-color: var(--bg-color);
+color: var(--font-color);
+font-family: 'Montserrat Alternates', sans-serif;
+}
+a ,a:hover {
+color: var(--font-color);
+text-decoration: none;
+}
+
+.my-input {
+  background-color: transparent;
+  color: var(--font-color);
+border: 1px solid var(--border-color);
+}
+.brdr {
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+.vote {
+  background-color: var(--light-bg);
+  color: var(--font-color);
+}
+
+.movie {
+  cursor: pointer;
+}
+
+.backGround-Image {
+  width: 100%;
+  height: 100vh;
+}
+.bGround {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+  background-size:cover;
+  background-position:center center;
+}
+.layer {
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(19, 23, 34,.2),rgba(19, 23, 34,.5),rgba(19, 23, 34,.6),rgba(19, 23, 34,0.7),rgba(19, 23, 34,.8),rgba(19, 23, 34,.9),rgba(19, 23, 34,1));
+}
+.bg-content {
+  position: relative;
+  top: -350px;
+  z-index: 100;
+  color: white;
+}
+.accordion-item {
+  background-color: var(--bg-color) !important;
+  border: none !important;
+}
+.accordion-header button {
+  padding-left: 0 !important;
+  background-color: var(--bg-color) !important;
+  box-shadow: none !important;
+  color: white !important;
+}
+
+.doted-point {
+  position: relative;
+}
+.doted-point::before{
+  content: " ";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 100%;
+}
+.text-gold {
+  color: rgb(255, 166, 0)  !important;
+}
+.bg-gold {
+  background-color: rgb(255, 166, 0) !important ;
+}
+
+.row-border{
+  border: 1px solid rgb(255, 166, 110) ;
+}
+
+
+.profile {
+  border: 1px solid #fff; 
+  width: fit-content; 
+  margin: auto;
+  margin-top: 150px;
+  padding: 40px 10px;
+  border-radius: 10px;
+
+}
+
+
+.spinner {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: #fff;
+}
+.spinner .spinner-grow {
+  width: 50px;
+  height: 50px;
+}
+
+.vadio {
+  position: relative;
+  cursor: pointer;
+ 
+}
+.vadio:hover .vadio-play {
+  opacity: .8;
+
+
+}
+
+.vadio-play {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  z-index: 100000;
+  width: 100%;
+  text-align: center;
+  padding:5px 0;
+  font-size: 35px;
+  background-color: rgba(0, 0, 0, 0.836);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 10px; */
+   transition: all .5s;
+  
+}
+.opacity-1 {
+  opacity: 1;
+}
