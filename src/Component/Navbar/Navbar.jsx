@@ -25,151 +25,147 @@ export default function Navbar({ userData, logOut }) {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-              {userData ? (
-                <>
-                  <li className="nav-item">
-                    <Link className="nav-link" aria-current="page" to="home">
-                      Home
-                    </Link>
-                  </li>
-                  <li className="nav-item dropdown ">
-                    <Link
-                      className="nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Movies
-                    </Link>
-                    <ul
-                      className="dropdown-menu bg-dark"
-                      aria-labelledby="navbarDropdown"
-                    >
-                      <li className="nav-item">
-                        <Link
-                          className="nav-link"
-                          aria-current="page"
-                          to="movies"
-                        >
-                          Movies
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          className="nav-link"
-                          aria-current="page"
-                          to="popular"
-                        >
-                          popular
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          className="nav-link"
-                          aria-current="page"
-                          to="top_rated"
-                        >
-                          Top_rated
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          className="nav-link"
-                          aria-current="page"
-                          to="now_playing"
-                        >
-                          Now_playing
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="nav-item dropdown ">
-                    <Link
-                      className="nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      TV Show
-                    </Link>
-                    <ul
-                      className="dropdown-menu bg-dark"
-                      aria-labelledby="navbarDropdown"
-                    >
-                      <li className="nav-item">
-                        <Link className="nav-link" aria-current="page" to="tv">
-                          TV Show
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          className="nav-link"
-                          aria-current="page"
-                          to="airing_today"
-                        >
-                          Airing_Today
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          className="nav-link"
-                          aria-current="page"
-                          to="popularTv"
-                        >
-                          Popular
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          className="nav-link"
-                          aria-current="page"
-                          to="on_the_air"
-                        >
-                          On_The_Air
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="nav-item dropdown ">
-                    <Link
-                      className="nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      People
-                    </Link>
-                    <ul
-                      className="dropdown-menu bg-dark"
-                      aria-labelledby="navbarDropdown"
-                    >
-                      <li className="nav-item">
-                        <Link
-                          className="nav-link"
-                          aria-current="page"
-                          to="people"
-                        >
-                          People
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
+              <>
+                <li className="nav-item">
+                  <Link className="nav-link" aria-current="page" to="home">
+                    Home
+                  </Link>
+                </li>
+                <li className="nav-item dropdown ">
+                  <Link
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Movies
+                  </Link>
+                  <ul
+                    className="dropdown-menu bg-dark"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link"
+                        aria-current="page"
+                        to="movies"
+                      >
+                        Movies
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link"
+                        aria-current="page"
+                        to="popular"
+                      >
+                        popular
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link"
+                        aria-current="page"
+                        to="top_rated"
+                      >
+                        Top_rated
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link"
+                        aria-current="page"
+                        to="now_playing"
+                      >
+                        Now_playing
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li className="nav-item dropdown ">
+                  <Link
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    TV Show
+                  </Link>
+                  <ul
+                    className="dropdown-menu bg-dark"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li className="nav-item">
+                      <Link className="nav-link" aria-current="page" to="tv">
+                        TV Show
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link"
+                        aria-current="page"
+                        to="airing_today"
+                      >
+                        Airing_Today
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link"
+                        aria-current="page"
+                        to="popularTv"
+                      >
+                        Popular
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link"
+                        aria-current="page"
+                        to="on_the_air"
+                      >
+                        On_The_Air
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li className="nav-item dropdown ">
+                  <Link
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    People
+                  </Link>
+                  <ul
+                    className="dropdown-menu bg-dark"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link"
+                        aria-current="page"
+                        to="people"
+                      >
+                        People
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
 
-                  <li className="nav-item">
-                    <Link className="nav-link" aria-current="page" to="about">
-                      About me
-                    </Link>
-                  </li>
-                </>
-              ) : (
-                ""
-              )}
+                <li className="nav-item">
+                  <Link className="nav-link" aria-current="page" to="about">
+                    About me
+                  </Link>
+                </li>
+              </>
             </ul>
             <div className="right-nav navbar-nav ms-auto mb-0 mb-lg-0">
               <div className="social-media navbar-nav flex-row mb-3 mb-lg-0 me-auto">

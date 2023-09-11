@@ -46,16 +46,17 @@ function App() {
     // console.log(decodedToken);
     setUserData(decodedToken);
   }
+  // userData = { userData };
 
   let routers = createBrowserRouter([
     {
       path: "/",
-      element: <Layout userData={userData} logOut={logOut} />,
+      element: <Layout logOut={logOut} />,
       children: [
         {
           path: "home",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
               <Home />
             </ProtectedRoute>
@@ -64,7 +65,7 @@ function App() {
         {
           path: "moviedetails/:id/:media_type",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               <MovieDetails />
             </ProtectedRoute>
           ),
@@ -72,7 +73,7 @@ function App() {
         {
           path: "about",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
               <About />
             </ProtectedRoute>
@@ -83,7 +84,7 @@ function App() {
         {
           path: "movies",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
               <Movies />
             </ProtectedRoute>
@@ -92,7 +93,7 @@ function App() {
         {
           path: "people",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
               <People />
             </ProtectedRoute>
@@ -101,7 +102,7 @@ function App() {
         {
           path: "popular",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
               <PopularMovie />
             </ProtectedRoute>
@@ -110,7 +111,7 @@ function App() {
         {
           path: "popularTv",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
               <PopularTv />
             </ProtectedRoute>
@@ -119,7 +120,7 @@ function App() {
         {
           path: "airing_today",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
               <Airing_Today />
             </ProtectedRoute>
@@ -128,7 +129,7 @@ function App() {
         {
           path: "on_the_air",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
               <On_The_Air />
             </ProtectedRoute>
@@ -137,7 +138,7 @@ function App() {
         {
           path: "top_rated",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
               <Top_rated />
             </ProtectedRoute>
@@ -146,7 +147,7 @@ function App() {
         {
           path: "now_playing",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
               <Now_playing />
             </ProtectedRoute>
@@ -155,7 +156,7 @@ function App() {
         {
           path: "tv",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
               <TV />
             </ProtectedRoute>
@@ -164,9 +165,9 @@ function App() {
         {
           path: "profile",
           element: (
-            <ProtectedRoute saveUserData={saveUserData} userData={userData}>
+            <ProtectedRoute saveUserData={saveUserData}>
               {" "}
-              <Profile userData={userData} />
+              <Profile />
             </ProtectedRoute>
           ),
         },
@@ -183,3 +184,18 @@ function App() {
 }
 
 export default App;
+// userData = { userData };
+// userData = { userData };
+// userData = { userData };
+// userData = { userData };
+// userData = { userData };
+// userData = { userData };
+// userData = { userData };
+// userData = { userData };
+// userData = { userData };
+// userData = { userData };
+// userData = { userData };
+// userData = { userData };
+// userData = { userData };
+// userData = { userData };
+// userData = { userData };
